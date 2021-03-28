@@ -23,3 +23,9 @@ We start off with scraping  multiple websites for different information about Ma
 
 ### MongoDB and Flask App
 After scraping the websites, we then converted the [jupyter notebook](https://github.com/Corters22/web-scraping-challenge/blob/main/Mission_to_Mars/mission_to_mars.ipynb) to a [python script](https://github.com/Corters22/web-scraping-challenge/blob/main/scrape_mars.py) defining a function that does the web scraping automatically. This information is then inserted into a MongoDB database. Using the flask library in Python, we created [app routes](https://github.com/Corters22/web-scraping-challenge/blob/main/app.py) to run the scraping function and display it on a [website](https://github.com/Corters22/web-scraping-challenge/blob/main/templates/index.html). 
+
+### Screenshots of Site
+
+![screenshot1](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot1.PNG)
+![screenshot2](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot2.PNG)
+![screenshot3](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot3.PNG)
