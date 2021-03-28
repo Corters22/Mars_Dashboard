@@ -59,12 +59,21 @@ def scrape():
     facts = pd.read_html(mars_facts)
 
 # grabbing the second table with only Mars facts
-    df = facts[1]
+    df = facts[0]
 #renaming columns
-    df.columns=['Mars Attributes', 'Facts']
+    df.rename(columns={0:'Description', 1:'Mars', 2:'Earth'}, inplace=True)
+# set index
+    df.set_index('Description', drop=True, inplace=True)
+#dropping first row
+    df.drop(['Mars - Earth Comparison'], axis=0, inplace=True)
 
 #converting df to html table for later use
     df.to_html('mars_facts_table.html')
+#saving table to variable for app
+    mars_table = df.to_html(table_id='mars_fact_table').replace('\n', '')
+
+#adding to dictionary
+    mars_info_dict['mars_table'] = mars_table
 
 
 # Mars Hemispheres
@@ -95,7 +104,7 @@ def scrape():
         soup = BeautifulSoup(html, 'html.parser')
 
         # scrape for image url and add to dictionary
-        images['url'] = soup.find('img', class_='wide-image')['src']
+        images['url'] = url + soup.find('img', class_='wide-image')['src']
         browser.back()
         #add dictionary to list
         hemisphere_image_urls.append(images)  
@@ -106,6 +115,8 @@ def scrape():
     
     #return dictionary
     return mars_info_dict
+
+
 
 
 
