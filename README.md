@@ -27,5 +27,9 @@ After scraping the websites, we then converted the [jupyter notebook](https://gi
 ### Screenshots of Site
 
 ![screenshot1](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot1.PNG)
+
+
 ![screenshot2](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot2.PNG)
+
+
 ![screenshot3](https://github.com/Corters22/web-scraping-challenge/blob/main/Images/screenshot3.PNG)
