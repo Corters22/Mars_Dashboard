@@ -1,6 +1,6 @@
 # Web Scraping
 
-In this challenge, we demonstrated how web-scraping can be used to update a website with the click of a button. 
+In this challenge, we demonstrated how web-scraping can be used to update a website with the click of a button. You can find the finished website [here](https://corters22.github.io/web-scraping-challenge/index.html). Feel free to click on the 'Scrape New Data' button for more Mars information.
 
 ### Scraping
 We start off with scraping  multiple websites for different information about Mars, the Red Planet. You can find the scraping code in jupyter notebook [here](https://github.com/Corters22/web-scraping-challenge/blob/main/Mission_to_Mars/mission_to_mars.ipynb) or in python [here](https://github.com/Corters22/web-scraping-challenge/blob/main/scrape_mars.py).
